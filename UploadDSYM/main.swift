@@ -719,7 +719,8 @@ do {
     }
     
     if !argument.debugMode {
-        try Validation(with: environment).validate()
+        // Disabled for testing
+        // try Validation(with: environment).validate()
     }
     
     if let path = DSYMLocator.customDSYMPath {
